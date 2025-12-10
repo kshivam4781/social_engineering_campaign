@@ -70,13 +70,15 @@
             font-style: italic;
         }
         .warning-box {
-            background-color: #ffd700;
-            border-left: 4px solid #dc3545;
-            padding: 15px;
-            margin: 25px 0;
+            background-color: #5a7d9a;
+            border-left: 4px solid #3a5a7a;
+            padding: 15px 20px;
+            margin: 25px -30px;
+            width: calc(100% + 60px);
+            color: #ffffff;
         }
         .warning-box strong {
-            color: #dc3545;
+            color: #ffffff;
         }
         .info-image {
             width: 100%;
@@ -163,18 +165,24 @@
             font-size: 18px;
         }
         .call-to-action {
-            background-color: #000000;
-            color: #ffd700;
+            background-color: #5a7d9a;
+            border-left: 4px solid #3a5a7a;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
-            margin: 30px 0;
+            margin: 30px -30px;
+            width: calc(100% + 60px);
         }
         .call-to-action p {
             margin: 5px 0;
+            color: #ffffff;
         }
         .call-to-action a {
-            color: #ffd700;
+            color: #ffffff;
             text-decoration: underline;
+        }
+        .call-to-action strong {
+            color: #ffffff;
         }
         .references-section {
             margin: 30px 0;
@@ -224,7 +232,10 @@
     <div class="email-container">
         <div class="intro">
             <p><strong>Dear Team Members,</strong></p>
-            <p>Social engineering attacks are common cybersecurity threats that rely on human psychology. This email will help you recognize and avoid these threats.</p>
+            <p style="color: #28a745; font-weight: bold; margin-top: -10px;">~5 minutes read</p>
+            <p>Social engineering attacks are common cybersecurity threats that rely on human psychology rather than technical vulnerabilities. This email has been prepared to help you recognize and avoid these threats.</p>
+            <p><strong>We request that you please take the time to read this entire email carefully. After reading, kindly send an acknowledgement confirming that you have read and understood the content.</strong></p>
+            <p>We have recently detected phishing attack attempts targeting our organization. It is critical that all team members remain vigilant, as falling victim to these attacks could result in significant data loss, business disruption, or financial loss.</p>
         </div>
 
         <div class="attacks-section">
@@ -234,14 +245,14 @@
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Phishing</div>
-                            <div class="attack-description">Fake emails or messages pretending to be from legitimate organizations (banks, Amazon, IRS, etc.).</div>
+                            <div class="attack-description">Fake emails or messages pretending to be from legitimate organizations (banks, Amazon, IRS, etc.). These messages look real and often create urgency, like saying your account will be closed if you don't act immediately. They trick you into clicking links or opening attachments that steal your information.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Steal passwords, credit cards, money, or infect your system.</div>
                         </div>
                     </td>
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Spear Phishing</div>
-                            <div class="attack-description">Targeted phishing aimed at specific individuals (CEO, accountant, etc.). Much more convincing.</div>
+                            <div class="attack-description">Targeted phishing aimed at specific individuals (CEO, accountant, etc.). Attackers research their targets first, so the messages are personalized and much more convincing. They might mention your name, your job title, or recent company events to make the email seem legitimate.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Gain access to sensitive information or systems.</div>
                         </div>
                     </td>
@@ -250,14 +261,14 @@
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Whaling</div>
-                            <div class="attack-description">Spear phishing focused on executives (CEOs, CFOs).</div>
+                            <div class="attack-description">Spear phishing focused on executives (CEOs, CFOs). These attacks are highly sophisticated because executives have access to the most valuable information and can authorize large financial transactions. Attackers spend time learning about the executive's communication style and business relationships.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Often used for wire-transfer fraud.</div>
                         </div>
                     </td>
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Smishing</div>
-                            <div class="attack-description">Phishing done via SMS / phone text.</div>
+                            <div class="attack-description">Phishing done via SMS / phone text. You receive a text message claiming to be from your bank, a delivery service, or a government agency. The message usually says something urgent like "Your account has been locked" or "You have a package waiting" and asks you to click a link or reply with personal information.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Trick you into clicking malicious links or providing personal information.</div>
                         </div>
                     </td>
@@ -266,14 +277,14 @@
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Vishing</div>
-                            <div class="attack-description">Phishing done via voice call (fake IRS, bank, tech support).</div>
+                            <div class="attack-description">Phishing done via voice call (fake IRS, bank, tech support). Someone calls you pretending to be from a trusted organization. They use fear and urgency, saying things like "Your account will be closed" or "You owe money immediately." They pressure you to give them your password, Social Security number, or allow them to access your computer remotely.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Obtain sensitive information or remote access through manipulation.</div>
                         </div>
                     </td>
                     <td>
                         <div class="attack-item">
                             <div class="attack-title">Pretexting</div>
-                            <div class="attack-description">Creating a fake story (pretext) to trick someone into giving data. Example: "This is IT support, I need your login to fix your account."</div>
+                            <div class="attack-description">Creating a fake story (pretext) to trick someone into giving data. The attacker invents a believable scenario to gain your trust. For example, they might call saying "This is IT support, I need your login to fix your account" or "I'm from HR and need to verify your employee information." They build a false sense of trust before asking for sensitive information.</div>
                             <div class="attack-goal"><strong>Goal:</strong> Extract confidential information or gain unauthorized access.</div>
                         </div>
                     </td>
