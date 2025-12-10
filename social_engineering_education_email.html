@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Engineering Awareness - Stay Safe Online</title>
+    <!-- Subject Line: Social Engineering Awareness - Sky IT Team -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            background-color: #ffffff;
+            padding: 30px;
+        }
+        .intro {
+            padding: 15px 0;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .section-header {
+            color: #dc3545;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #dc3545;
+        }
+        .attacks-section {
+            position: relative;
+            margin: 20px 0;
+        }
+        .attacks-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .attacks-table td {
+            padding: 12px 15px;
+            vertical-align: top;
+            width: 50%;
+        }
+        .attack-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .attack-item:last-child {
+            border-bottom: none;
+        }
+        .attack-title {
+            color: #dc3545;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .attack-description {
+            color: #000000;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .attack-goal {
+            color: #dc3545;
+            font-size: 13px;
+            font-style: italic;
+        }
+        .warning-box {
+            background-color: #ffd700;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 25px 0;
+        }
+        .warning-box strong {
+            color: #dc3545;
+        }
+        .info-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .two-column-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .two-column-table td {
+            padding: 0 15px;
+            vertical-align: top;
+            width: 50%;
+        }
+        .column {
+            padding: 0;
+        }
+        .column h3 {
+            color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #dc3545;
+        }
+        .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .column li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+            color: #000000;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .column li:last-child {
+            border-bottom: none;
+        }
+        .column li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .red-flags-column li::before {
+            color: #dc3545;
+        }
+        .risk-column li::before {
+            color: #dc3545;
+        }
+        .tips-section {
+            margin: 30px 0;
+        }
+        .tips-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        .tips-table td {
+            padding: 8px 10px;
+            vertical-align: top;
+            width: 50%;
+        }
+        .tips-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+            color: #000000;
+            list-style: none;
+        }
+        .tips-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .call-to-action {
+            background-color: #000000;
+            color: #ffd700;
+            padding: 20px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .call-to-action p {
+            margin: 5px 0;
+        }
+        .call-to-action a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        .references-section {
+            margin: 30px 0;
+            padding: 20px;
+            border-top: 2px solid #dc3545;
+            border-bottom: 2px solid #dc3545;
+        }
+        .references-section h3 {
+            color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+        }
+        .references-section p {
+            color: #000000;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .references-section a {
+            color: #dc3545;
+            text-decoration: underline;
+        }
+        .acknowledgment-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #ffd700;
+            border-left: 4px solid #dc3545;
+            text-align: center;
+        }
+        .acknowledgment-section p {
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #000000;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="intro">
+            <p><strong>Dear Team Members,</strong></p>
+            <p>Social engineering attacks are common cybersecurity threats that rely on human psychology. This email will help you recognize and avoid these threats.</p>
+        </div>
+
+        <div class="attacks-section">
+            <h2 class="section-header">Types of Social Engineering Attacks</h2>
+            <table class="attacks-table">
+                <tr>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Phishing</div>
+                            <div class="attack-description">Fake emails or messages pretending to be from legitimate organizations (banks, Amazon, IRS, etc.).</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Steal passwords, credit cards, money, or infect your system.</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Spear Phishing</div>
+                            <div class="attack-description">Targeted phishing aimed at specific individuals (CEO, accountant, etc.). Much more convincing.</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Gain access to sensitive information or systems.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Whaling</div>
+                            <div class="attack-description">Spear phishing focused on executives (CEOs, CFOs).</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Often used for wire-transfer fraud.</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Smishing</div>
+                            <div class="attack-description">Phishing done via SMS / phone text.</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Trick you into clicking malicious links or providing personal information.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Vishing</div>
+                            <div class="attack-description">Phishing done via voice call (fake IRS, bank, tech support).</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Obtain sensitive information or remote access through manipulation.</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="attack-item">
+                            <div class="attack-title">Pretexting</div>
+                            <div class="attack-description">Creating a fake story (pretext) to trick someone into giving data. Example: "This is IT support, I need your login to fix your account."</div>
+                            <div class="attack-goal"><strong>Goal:</strong> Extract confidential information or gain unauthorized access.</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="warning-box">
+            <strong>Remember:</strong> Legitimate organizations will NEVER ask for your password, PIN, or sensitive information via email, text, or phone.
+        </div>
+
+        <h2 class="section-header">What to Look Out For</h2>
+        
+        <img src="https://content.kaspersky-labs.com/fm/press-releases/6c/6c05f816fde5d25d1b6c6739fcf071de/processed/shutterstock2179110671-q75.jpg" alt="Social Engineering Awareness" class="info-image">
+
+        <table class="two-column-table">
+            <tr>
+                <td>
+                    <div class="column red-flags-column">
+                        <h3>Red Flags & Warning Signs</h3>
+                        <ul>
+                            <li><strong>Urgent or threatening language</strong> creating panic or false urgency</li>
+                            <li><strong>Suspicious sender addresses</strong> with slight misspellings</li>
+                            <li><strong>Generic greetings</strong> instead of your name</li>
+                            <li><strong>Requests for sensitive information</strong> like passwords, PINs, or credit card details</li>
+                            <li><strong>Unexpected attachments or links</strong> from unknown senders</li>
+                            <li><strong>Poor grammar and spelling</strong> errors</li>
+                            <li><strong>Mismatched URLs</strong> when hovering over links</li>
+                            <li><strong>Pressure to act immediately</strong> without time to verify</li>
+                            <li><strong>Unusual requests from "colleagues"</strong> asking for money transfers or sensitive data</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="column risk-column">
+                        <h3>What's at Risk</h3>
+                        <ul>
+                            <li><strong>Financial Loss:</strong> Unauthorized transactions, wire transfers, or fraudulent purchases</li>
+                            <li><strong>Identity Theft:</strong> Stolen personal information used to commit fraud</li>
+                            <li><strong>Data Breach:</strong> Unauthorized access to sensitive company or customer data</li>
+                            <li><strong>Malware Infection:</strong> Malicious software compromising your device or company network</li>
+                            <li><strong>Account Compromise:</strong> Hackers gaining access to email, bank accounts, or work systems</li>
+                            <li><strong>Reputation Damage:</strong> Compromised account used to send malicious emails to contacts</li>
+                            <li><strong>Business Email Compromise:</strong> Attackers using your email to request payments from colleagues</li>
+                            <li><strong>Ransomware:</strong> Files encrypted with demands for payment</li>
+                            <li><strong>Operational Disruption:</strong> System downtime and loss of productivity</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <h2 class="section-header">How to Protect Yourself</h2>
+
+        <div class="tips-section">
+            <table class="tips-table">
+                <tr>
+                    <td>
+                        <ul class="tips-list" style="list-style: none; padding: 0; margin: 0;">
+                            <li><strong>Verify the sender:</strong> Check email addresses and phone numbers for misspellings or suspicious domains</li>
+                            <li><strong>Don't click suspicious links:</strong> Hover over links to see the actual URL before clicking</li>
+                            <li><strong>Be skeptical of urgency:</strong> Take time to verify before acting</li>
+                            <li><strong>Verify phone calls:</strong> Hang up and call back using an official number</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="tips-list" style="list-style: none; padding: 0; margin: 0;">
+                            <li><strong>Never share credentials:</strong> No legitimate organization will ask for passwords via email, text, or phone</li>
+                            <li><strong>Report suspicious activity:</strong> Contact IT security immediately if you receive a suspicious message</li>
+                            <li><strong>Use multi-factor authentication:</strong> Enable MFA on all accounts</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="call-to-action">
+            <p><strong>Questions or Concerns?</strong></p>
+            <p>Contact the Sky IT Team immediately if you suspect a social engineering attack.</p>
+            <p><strong>Email:</strong> <a href="mailto:it-support@skytransportsolutions.com">it-support@skytransportsolutions.com</a></p>
+        </div>
+
+        <div class="references-section">
+            <h3>Learn More</h3>
+            <p>To learn more about avoiding social engineering and phishing attacks, refer to:</p>
+            <p><a href="https://www.knowbe4.com/hs-fs/hubfs/CEO_Fraud_Phishing2.png?t=1516898647980&width=735&name=CEO_Fraud_Phishing2.png" target="_blank">View Example: CEO Fraud Phishing Attack</a></p>
+            <p><a href="https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks" target="_blank">Avoiding Social Engineering and Phishing Attacks</a> - Released by America's Cyber Defense Agency (CISA)</p>
+        </div>
+
+        <div class="acknowledgment-section">
+            <p>Kindly acknowledge this email that you have read and understood.</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Sky Transport Solutions. All rights reserved.</p>
+            <p>Sky IT Team | it-support@skytransportsolutions.com</p>
+        </div>
+    </div>
+</body>
+</html>
